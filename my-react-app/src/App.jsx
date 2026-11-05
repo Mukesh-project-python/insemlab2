@@ -1,27 +1,43 @@
+
 function Feedback() {
     return (
         <form>
             <div>
+                <h1>Feedback Form</h1>
+                <p>Write your feedback here</p>
 
-                <h1><b>Feedback form</b></h1>
-                <p>write your feedback here</p>
+                <label>Name:</label>
+                <input
+                    type="text"
+                    placeholder="Enter your name"
+                />
 
-                <label>Name</label>
-                <input type="text" placeholder="Enter your name"></input>
+                <br /><br />
 
-                <label><b>star rating</b></label>
-                <input type="number" placeholder="Give your star rating"></input>
+                <label>Star Rating:</label>
+                <input
+                    type="number"
+                    placeholder="Give your star rating"
+                    min="1"
+                    max="5"
+                />
 
-                <label>Comment</label>
-                <input type="text" placeholder="Write your comment here"></input>
+                <br /><br />
 
-                <h1><b>Thank you...</b></h1>
+                <label>Comment:</label>
+                <textarea
+                    placeholder="Write your comment here"
+                />
 
-                <button>Submit</button>
+                <br /><br />
 
+                <button type="submit">Submit</button>
+
+                <h2>Thank you!</h2>
             </div>
         </form>
     );
 }
 
 export default Feedback;
+
